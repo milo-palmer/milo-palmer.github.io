@@ -217,11 +217,12 @@ img {
 
 .yellow-box-fixed {
   background-color: #F3D83E;
-  width: 50px;
-  height: 15px;
+  width: 70px;
+  height: 70px;
   position: fixed;
-  left: 0;
+  left: 5px;
   bottom: 5px;
+  text-align: center;
 }
 
 .green-box  {
