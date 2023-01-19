@@ -11,30 +11,102 @@
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="yellow" id="landing-page">
+  <header class="yellow">
     <nav>
       <h1>Blog.</h1>
       <div>
-        <a href="#landing-page"><button>Landing Page</button></a>
-        <a href="#blog-posts"><button class="nav-btn">Blog Posts</button></a>
+        <a href="index.html"><button>Home</button></a>
+        <a href="#blog-posts"><button>Blog Posts</button></a>
         <a href="#goals"><button>Goals</button></a>
       </div>
     </nav>
   </header>
-  <section class="yellow">
+  <section class="yellow"  id="landing-page">
     <div class="container grid">
       <div class="hero-text-wrapper">
-        <h2>Kia ora Taiao! HelloWorld!</h2> 
+        <h2>Kia ora <br> e te ao! Hello World!</h2> 
         <p> This is the beginning of my website home page. It will eventually contain a list of links to all my blogs. </p>
       </div>
       <img src="./assets/Img-1.png"/>
   </div>
   </section>
-  <section id="goals">
-    
+  <section id="goals" class="black">
+    <div class="container">
+      <div>
+      <h2>Goals</h2>
+      <p>Things I want to accomplish during this course and a little after</p>
+      </div>
+      <div class="grid">
+        <div></div>
+        <ol>
+          <li>Keep Practising <span class="gold">HTML</span></li>
+          <li>Improve <span class="gold">CSS</span></li>
+          <li>Learn <span class="gold">JavaScript</span></li>
+          <li>Learn <span class="gold">React</span></li>
+          <li>Explore <span class="gold">THREE.JS</span> (JavaScript 3D design library)</li>
+        </ol>
+        </div>
+    </div>
   </section>
   <section id="blog-posts">
-
+    <div class="container grid border">
+      <div class="blogcard-text-wrapper">
+        <div>
+          <h4>tech</h4>
+          <h3>CSS Positions</h3>
+        </div>
+        <div>
+          <a href="blog-tech-2.html">
+          <p>Element can sometimes act in very unamusing ways and can seem...</p>
+          <h5>Read more</h5>
+        </a>
+        </div>
+      </div>
+        <img src="./assets/img-3.png" alt="pic of css position styles">
+    </div>
+    <div class="container grid-reverse border">
+      <div></div>
+      <div class="blogcard-text-wrapper">
+        <div>
+          <h4>blog post</h4>
+          <h3>Sprint-Two Core Blog</h3>
+        </div>
+        <div>
+          <a href="">
+          <p>Lorem Ipsom Some Text here first blogs sentence...</p>
+          <h5>Coming soon</h5>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="container grid">
+      <div class="blogcard-text-wrapper">
+        <div>
+          <h4>core</h4>
+          <h3>Explore Values and Identity</h3>
+        </div>
+        <div>
+          <a href="blog-core-1.html">
+          <p>The aim of this blog is to reflect on your core personal values...</p>
+          <h5>Read more</h5>
+        </a>
+        </div>
+      </div>
+      <img src="./assets/img-5.png" alt="abstract painting of a face">
+    </div>
   </section>
+  <footer>
+    <nav>
+      <div>
+        <a href="index.html"><button>Home</button></a>
+        <a href="#blog-posts"><button class="nav-btn">Blog Posts</button></a>
+        <a href="#goals"><button>Goals</button></a>
+      </div>
+      <h1>Blog.</h1>
+    </nav>
+    <div class="center">
+      <p>2023 - No Rights Reserved</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog Postion CSS</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Blog.</h1>
+      <div>
+        <a href="index.html"><button>Home</button></a>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container blog-grid">
+      <div class="blogcard-text-wrapper">
+        <div>
+          <h4>Tech</h4>
+          <h3>Position's CSS</h3>
+        </div>
+        <div class="blog-author">
+          <div>
+            <p class="subtitle">Date Published</p>
+            <p>Jan 19th</p>
+          </div>
+          <div>
+            <p class="subtitle">Author</p>
+            <p>Milo Palmer</p>
+          </div>
+        </div>
+        
+      </div>
+      <p class="blog-text-p1">Element can sometimes act in very unamusing ways and can seem to not do what you want them to but with a bit of mastery in the position style we can turn into a true frontend hacker and gain incredible control over our web pages and where we position our content. </p>
+    </div>
+  </section>
+  <div class="img-container">
+    <img src="./assets/img-2.png" alt="Person infont of a computer hacking the frame of mains">
+  </div>
+  <section>
+    <div class="container">
+      <h6>Postion Static</h6>
+      <p>Position static is the default position, one doesn’t even need to add this to your css, 
+        Static positions are not affected by the top, bottom, left and right properties.
+        Static position is fairly basic, static elements position them selves next to or underneath depending if they are text - inline or div blocks. 
+      </p>
+      <div class="yellow-box"></div>
+      <div class="green-box"></div>
+      <h6>Position Relative</h6>
+      <p>Position relative gets a bit more exiting having positon relative lets and object have a z-index, lets us stack elements ontop of one another. It can also be affected by the top, bottom, left and right properties. These properties are by defauklt set ot 0 but take a numerical value such as top: 100px which would place the element 100px away from the top in this case with a positive value it will move downwards on the page with a negative value it will move above where it was. Most importantly when a parent object has a position set to relative a child element can be positioned anywhere on the DOM without limitations and without affecting the position of other elements.  
+      </p>
+      <p>yellow - static</p>
+      <div class="yellow-box"></div>
+      <p>green - relative</p>
+      <div class="green-box-relative"></div>
+      <h6>Postion Absolute</h6>
+      <p>Position absolute will initially position a element relative to the document’s body element position element is manipulate using the top, bottom, left and right properties. When it has a parent element set to relative the child with absolute will be positioned you guessed it relative to its parent making the top, bottom, left and right properties based of the parent. If its parent element doesn’t have a positon et to relative it will find the next closet element other wise it will use the body
+      </p>
+      <p>yellow- parent - relative</p>
+      <div class="yellow-box-relative">
+        <div class="green-box-absolute"></div>
+      </div>
+      <p>green - absolute</p>
+      <h6>Postion Fixed</h6>
+      <p>Positon fixed works in a similar way to position absolute but is set relative ot the document body always. if you hadn't noticed it is the little yellow box on the bottom left of the screen. This element is fixed to this position using the top, bottom, left and right properties and will remain in this position as we scroll thorugh the page. Position fixed is often used for navigation menus so as the user scrolls the nav menu remains in view and can always be interated with.
+      </p>
+      <div class="yellow-box-fixed"></div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div>
+        <a href="index.html"><button>Home</button></a>
+      </div>
+      <h1>Blog.</h1>
+    </nav>
+  </footer>
+</body>
+</html>
