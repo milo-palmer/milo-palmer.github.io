@@ -15,7 +15,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
 }
 
 h1 {
@@ -263,25 +262,156 @@ img {
   text-align: center;
 }
 
-
-  @media (max-width: 1100px){
-    section{
-      width: 100%;
-    }
-
-    .container {
-      width: 100%;
+  @media (max-width: 1300px) {
+    .border {
+      border-bottom: 1px solid black;
+      width: 80%;
     }
   }
 
-  @media (max-width: 450px){
 
+  @media (max-width: 1100px){
+    .container{
+      padding: 40px;
+    }
 
-    .grid-reverse, .grid{
-      display: grid;
+    nav {
+      padding: 20px 40px;
+    }
+
+  }
+
+  @media (max-width: 1000px){
+    .container{
+      padding: 40px 20px;
+    }
+
+    nav {
+      padding: 20px 20px;
+    }
+
+    .grid, .blog-grid {
       grid-template-columns: 1fr;
     }
 
-    /* maybe flex column and reverse for the images */
+    .grid-reverse{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .blogcard-text-wrapper {
+      margin-bottom: 40px;
+    }
+
+    .blog-text-p1 {
+      margin-top: 0px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 900px){
+  
+    nav {
+      flex-direction: column;
+      padding: 20px 40px;
+    }
+
+    nav div {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+  }
+
+  @media (max-width: 650px){
+
+    .container {
+      padding: 20px;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      line-height: 26px;
+      color: black;
+    }
+
+    h1 {
+      font-size: 90px;
+      margin-bottom: 15px;
+      line-height: 100px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+    }
+    
+    h2 {
+      font-size: 65px;
+      margin-bottom: 15px;
+      line-height: 75px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+    }
+    
+    h3 {
+      font-size: 45px;
+      margin-bottom: 15px;
+      line-height: 55px;
+      font-weight: 500;
+    }
+    
+    h4 {
+      font-family: sans-serif;
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 300;
+      font-size: 20px;
+      margin-bottom: 15px;
+      line-height: 25px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    h5 {
+      font-style: italic;
+      font-size: 15px;
+      line-height: 15px;
+    }
+    
+    h6 {
+      font-size: 25px;
+      line-height: 35px;
+      color: black;
+    }
+    
+    p {
+      margin: 15px 0;
+    }
+
+    button{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 3px solid black;
+      padding: 10px 15px;
+    }
+
+  }
+
+  @media (max-width: 520px){
+
+    nav div {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+   
+
 
   }
