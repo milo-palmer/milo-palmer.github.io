@@ -251,8 +251,6 @@ img {
   margin-bottom: 40px;
 }
 
-
-
 .black {
   background-color: rgb(35, 35, 35);
   color: white;
@@ -305,6 +303,14 @@ img {
 
     .blog-text-p1 {
       margin-top: 0px;
+    }
+
+    .blog-author {
+      justify-content: flex-start;
+    }
+
+    .margin-right {
+      margin-right: 75px;
     }
 
     br {
@@ -412,6 +418,13 @@ img {
       align-items: center;
     }
    
+  }
 
+  @media (max-width: 340px) {
+   
+    .subtitle {
+      font-size: 18px;
+      line-height: 20px;
+    }
 
   }
