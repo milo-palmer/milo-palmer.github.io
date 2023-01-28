@@ -92,6 +92,10 @@ a:visited {
   color: black;
 }
 
+.para-link {
+  text-decoration: underline;
+}
+
 button{
   font-family: sans-serif;
   font-size: 22px;
