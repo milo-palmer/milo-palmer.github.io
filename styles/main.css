@@ -316,6 +316,24 @@ img {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.flex-apart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.code-img {
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.562);
+}
+
+
+
   @media (max-width: 1300px) {
     .border {
       border-bottom: 1px solid black;

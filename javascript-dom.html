@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript and the DOM</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Blog.</h1>
+      <div>
+        <a href="index.html"><button>Home</button></a>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container blog-grid">
+      <div class="blogcard-text-wrapper">
+        <div>
+          <h4>Tech</h4>
+          <h3>JavaScript and the DOM</h3>
+        </div>
+        <div class="blog-author">
+          <div>
+            <p class="subtitle">Date Published</p>
+            <p>Jan 29th</p>
+          </div>
+          <div>
+            <p class="subtitle">Author</p>
+            <p>Milo Palmer</p>
+          </div>
+        </div>
+      </div>
+      <p class="blog-text-p1">This blog should strengthen your understanding of JavaScript and its relationship to HTML and CSS Control flow and loops, arrays, and objects Functions and why they are useful The DOM and DevTools</p>
+    </div>
+  </section>
+  <div class="img-container">
+    <img src="./assets/js-funda.jpeg" alt="">
+  </div>
+  <section>
+    <div class="container">
+      <h6>Describe JavaScript and its relationship to HTML and CSS.</h6>
+      <p>Imagine Times Square, we can turn this into  a system described by these three coding languages. Imagine just the buildings no lights no billboards and people just standing in grey clothes. This is the HTML part of Times Square just blank buildings and blank humans. It looks like Times Square but isn’t quite the same and doesn’t look alive. </p>
+      <p>Here comes the CSS to make Times Square look great. Now that we have the buildings and the billboards and the people we can start to add some colour. The buildings get their logos with flashy neon glows the people now each have their own fashion style and can be identified as different from the next the billboards contain images and can be positioned on hte buildings where needed. Times square is certainly looking good now but people still aren’t moving and nothing feels like it’s alive. </p>
+      <p>In comes JavaScript(JS) the billboards now play videos and some are in sync, logos jump to life. The people now seem like people with needs and wants they start moving throughout the city. Taxi’s start coming and stop if someone calls them. The city suddenly feels like it is interactable and we can have an impact by being involved now. </p>
+      <p>This is HTML, CSS and JS. HTML is the building foundations holds the information, CSS covers the style and looks, JS controls functionality it makes the city interactive. </p>
+      <h6>Explain control flow and loops using an example process from everyday life</h6>
+      <p><strong>--Control Flow--</strong></p>
+      <p>Control flow is the order which the computer reads its instructions(code). If we we’re to write a list of a tasks before leaving the house it could consists of - </p>
+      <ul>
+        <li>Eat</li>
+        <li>Shower</li>
+        <li>Grab keys</li>
+        <li>Drive</li>
+      </ul>
+      <p>The order that we wrote this down would be the order to complete these tasks in. Control flow works the same way and is useful to make sure the computer does the correct job at the correct time. It will also break if certain tasks can’t be done before hand. Using the previous example if our list looked like this.</p>
+      <ul>
+        <li>Eat</li>
+        <li>Shower</li>
+        <li>Drive</li>
+        <li>Grab keys</li>
+      </ul>
+      <p>The computer will shoot an error, rightfully so it would be impossible to drive without keys. Control flow is important not only for the order to complete tasks in but to make sure that those tasks can actually be done based of what has happened beforehand. </p>
+      <p><strong>--Loops--</strong></p> 
+      <p>Loops are the computers way of counting. Say we follow the tasks above and at the eat part we decide to eat cereal. Say we know it is going to take twenty spoonfuls to finish the cereal. Instead of saying the same thing over and over again 20 times “Eat a spoonful, Eat a spoonful, Eat a spoonful…” we could tell the computer to do the same task 20 times in two lines of code vs 20, this is more efficient and useful. It won't work for lunch as it could take more or less “mouthfuls” so to make it work for lunch lets say do this task below until the plate is empty and now it works for every meal not only lunch. </p>
+      <h6>Describe what the DOM is and an example of how you might interact with it.</h6>
+      <p>DOM stands for document object model. The DOM is a representation of the structure of the web elements. The DOM representation allows it to be manipulated. It can be modified with a scripting language such as JavaScript. The DOM is a document of all the elements on a webpage and contains the tools to access these elements and change their HTML properties. 
+        Below is and example of using the DOM to manipulate multiple elements. Press the Buttons to see.
+        </p>
+      <div id="p-div">
+        <h6 id="para">Change my position</h6>
+      </div>
+      <div class="flex-apart">
+        <button id="btn-left" onclick="pressLeft()">It's Above Me</button>
+        <button id="btn-right" onclick="pressRight()">Bring it over here</button>
+      </div>
+        <img src="./assets/HTML.png" alt="" class="code-img">
+        <img src="./assets/JavaScript.png" alt="" class="code-img">
+      <h6>What is the difference between accessing data from arrays and objects?</h6>
+      <p>Arrays and object have differnt way to access the info inside. It has a lot to do with how the info id stored. Arrays have a index when things are stored in arrays they have numbered positions called an index and to access items you call on its position in the array not on the item. So if the array had a string/word stored at the 4th position since we count form zero we would use array[3] to get that item out. Objects can be called by the individual items using dot notation or bracket notation. Objects store values using a key so if there was an object called names taht stored info by names and we wanted a specific person unlike arrays we don’t need its position we need the name so we call names.john for example or using bracket notation names[“john”]</p>
+      <h6>Explain what functions are and why they are helpful.</h6>
+      <p>Functions are used to write a piece of code once and have the ability to call on it later. There are many use cases for this like the buttons above I want them to do something when pressed. If I was to write out the code not inside a function like we say in control flow the computer will read the document and complete the code. If it is in a function it will not read this code until it sees a peice of called calling the function to run. Then it will go back and read the function and complete the code. Going back to the buttons I wrote two functions and called upon them when the buttons were pressed. The functions can be run an infinite number of times as long as someone is there to press the buttons. </p>
+      <p>Functions can also be used to avoid writing bits of code over and over again but instead writing it once and calling upon that function when it is needed. Not only can they be used to execute the same peice of code over and over they are at a higher level used to complete the same tasks with different inputs using parameters (something you put in the function), for example if you needed lots of numbers added together a lot in a programme you wouldn’t want to do the math over and over you could write a function that is similar to an algebraic expression. Using X and Y you could tell the function to add these together but when you call on the function you give it real numbers in place of x and y and it will replace the numbers exactly like algebra.This can grow to do very complex problems which saves effort and time.</p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="blog-tile-wrapper">
+        <div class="blog-tile">
+          <a href="learning-plan.html" ><img src="./assets/img-7.jpeg" alt=""></a>
+          <a href="learning-plan.html" ><h6>Sprint Two - Learning Plan</h6></a>
+          <a href="learning-plan.html"  class="snap-to-bottom"><h5>Read more</h5></a>
+        </div>
+        <div class="blog-tile">
+          <a href="html-css.html" ><img src="./assets/img-3.png" alt=""></a>
+          <a href="html-css.html" ><h6>CSS Positions</h6></a>
+          <a href="html-css.html"  class="snap-to-bottom"><h5>Read more</h5></a>
+        </div>
+        <div class="blog-tile">
+          <a href="emotional-intelligence.html" ><img src="./assets/emotional.jpeg" alt=""></a>
+          <a href="emotional-intelligence.html" ><h6>Emotional Intelligence EQ vs IQ</h6></a>
+          <a href="emotional-intelligence.html"  class="snap-to-bottom"><h5>Read more</h5></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div>
+        <a href="index.html"><button>Home</button></a>
+      </div>
+      <h1>Blog.</h1>
+    </nav>
+    <div class="center">
+      <p>2023 - No Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
