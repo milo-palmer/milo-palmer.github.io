@@ -11,8 +11,8 @@ function pressRight() {
   btnLeft.textContent = 'bring it back'
   if (!goneRight) {
     para.textContent = 'Nice you changed me'
+    goneRight = true
   }
-  goneRight = true
 }
 
 function pressLeft() {

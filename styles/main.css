@@ -323,7 +323,7 @@ img {
 .flex-apart {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 41px;
 }
 
 .code-img {
