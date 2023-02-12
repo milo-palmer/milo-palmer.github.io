@@ -53,7 +53,7 @@ const blogs = [
     subhead: 'Core',
     sentence:
       'Until recently, the conventional thinking was that our brains were hard-wired at birth and therefore unchange',
-    isFeature: true,
+    isFeature: false,
   },
 
   {
@@ -63,6 +63,16 @@ const blogs = [
     subhead: 'Tech',
     sentence:
       'This blog should strengthen my understanding of my approach to problem-solving and what technique work for myself',
+    isFeature: true,
+  },
+
+  {
+    title: 'Core Reflection',
+    img: './assets/refelction.png',
+    link: 'foundations-reflection.html',
+    subhead: 'Core',
+    sentence:
+      "Let's reflect on all you have learnt as part of the core skills component of Foundations",
     isFeature: true,
   },
 ]
