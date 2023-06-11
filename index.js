@@ -9,15 +9,6 @@ const blogs = [
   },
 
   {
-    title: 'Learning Plan',
-    img: './assets/img-6.webp',
-    link: 'learning-plan.html',
-    subhead: 'Core',
-    sentence: 'This plan is a core part of your learning and will develop',
-    isFeature: false,
-  },
-
-  {
     title: 'Explore Values and Identity',
     img: './assets/img-5.png',
     link: 'html-css.html',
@@ -33,7 +24,7 @@ const blogs = [
     subhead: 'Core',
     sentence:
       "Exploring EQ and it's importance in the work place and in life plus it's differences from IQ",
-    isFeature: false,
+    isFeature: true,
   },
 
   {
@@ -43,7 +34,7 @@ const blogs = [
     subhead: 'Tech',
     sentence:
       'This blog should strengthen your understanding of JavaScript and its relationship to HTML',
-    isFeature: true,
+    isFeature: false,
   },
 
   {
@@ -53,7 +44,7 @@ const blogs = [
     subhead: 'Core',
     sentence:
       'Until recently, the conventional thinking was that our brains were hard-wired at birth and therefore unchange',
-    isFeature: false,
+    isFeature: true,
   },
 
   {
@@ -73,7 +64,7 @@ const blogs = [
     subhead: 'Core',
     sentence:
       "Let's reflect on all you have learnt as part of the core skills component of Foundations",
-    isFeature: true,
+    isFeature: false,
   },
 ]
 
